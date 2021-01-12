@@ -15,6 +15,7 @@ Expectation: An app that guesses a correct number, between 1-20, and let them kn
     - winning message to disable game
     - losing message if they exceed 4 tries
 
+Order of Events:
 1) Grab DOM elements with IDs in HTML
 2) Initialize State (what will change) our global 'let's
     - random number: n
