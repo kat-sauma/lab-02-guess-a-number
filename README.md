@@ -38,3 +38,8 @@ Order of Events:
         - state reset remaining guesses state to 4
         - state create a new random n
         - view re-enable the inputs if they are disabled and fix the game text
+
+
+
+QUESTIONS:
+1. HOW CAN YOU TEST LOSE/END GAME JS?

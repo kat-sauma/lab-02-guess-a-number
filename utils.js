@@ -12,7 +12,3 @@ export function compareNumbers(theirGuess, myNumber) {
     }
 }
 
-// export function limit(tries, zero) {
-//     if (tries < zero)
-//         return 0;
-}
