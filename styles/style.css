@@ -6,20 +6,19 @@ body {
     --color3: hsla(200, 61%, 56%, 1);
     --color4: hsla(187, 41%, 94%, 1);
     --color5: hsla(170, 28%, 95%, 1); */
-/* 
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
     
-    --header-height: 80px;
+    --color1: rgba(242, 230, 194, 0.7); 
+    --color2: rgb(165, 245, 178);
+    --color3: rgb(240, 209, 238);
+    --color4: rgb(240, 152, 104);
+    --color5: rgb(92, 110, 244); 
+    
+    --header-height: 60px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
+    --gutter: 20px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+
 }
 
 main {
@@ -28,11 +27,22 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-image: url(../assets/girl-fish-balloon.jpeg);
+    height: 100%;
+    background-repeat: space;
+    background-blend-mode: screen;
+    background-color: rgba(230, 170, 247, 0.536);
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-variant: small-caps;
+    font-size: 1.3rem;
+    text-align: center;
+    text-emphasis: ;
 }
 
 section {
-    background-color: var(--color5);
-    width: 1000px;
+    background-color: var(--color1);
+    width: 500px;
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -42,15 +52,20 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 2px var(--color5);
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
+    justify-content: center;
+    background-color: var(--color5);
     height: var(--header-height);
     box-shadow: var(--shadow);
+}
+.title {
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    color: whitesmoke;
 }
 
 footer {
@@ -60,25 +75,37 @@ footer {
     box-shadow: var(--shadow);
 }
 
+#number-span {
+    font-size: 3rem;
+    color: var(--color5);
+}
 
-h2 {
+.responses {
     font-size: 1.8rem;
-    font-weight: bold;
+}
+
+input {
+    margin-top: 15px;
+    background-color: whitesmoke;
+}
+button{
+    background-color: whitesmoke;
+    font-family: 'Fraunces', serif;
+    padding: 5px;
+    margin: 12px;
 }
 
 .gutter-right {
     margin-right: 20px;
 }
 
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
-
 header img {
     height: var(--header-height);
 }
 
-
+.hidden {
+    visibility: hidden;
+}
 
 content {
     width: 80%;
