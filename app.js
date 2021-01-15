@@ -1,5 +1,4 @@
-// import functions and grab DOM elements
-import { compareNumbers } from './utils.js';
+import { compareNumbers, guessesLeft } from './utils.js';
 
 const guessButton = document.getElementById('guess-submit');
 const numberInput = document.getElementById('number-guess');
@@ -9,12 +8,9 @@ const LoseContainer = document.getElementById('loser-message');
 const loserResponse = document.getElementById('lose');
 const resetButton = document.getElementById('reset-game');
 
-// initialize state
 let remainingTries = 4;
 let secretNumber = Math.ceil(Math.random() * 20);
 
-
-// set event listeners to update state and DOM
 guessButton.addEventListener('click', () => {
     --remainingTries;
     //decrementing number of attempts
@@ -23,6 +19,7 @@ guessButton.addEventListener('click', () => {
     let submitNumber = numberInput.value;
     let someNum = compareNumbers(submitNumber, secretNumber);
     //if/then view for guessing hints and winning
+    messageResponse.classList.remove('hidden');
     if (someNum === 1) {
         messageResponse.textContent = 'oof, too high.';
     } else if (someNum === -1) {
@@ -41,7 +38,6 @@ guessButton.addEventListener('click', () => {
     }
 });
 
-//reset game
 resetButton.addEventListener('click', () => {
     remainingTries = 4;
     triesLeftSpan.textContent = remainingTries;
