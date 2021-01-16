@@ -47,3 +47,6 @@ resetButton.addEventListener('click', () => {
     secretNumber = Math.ceil(Math.random() * 20);
     guessButton.disabled = false;
 });
+
+// to view computer's guess
+// console.log(secretNumber);
